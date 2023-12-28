@@ -14,22 +14,19 @@ public class Board {
 		this.num = num;
 		this.title = title;
 		this.content = content;
-		
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
-		String formatedNow = date.format(formatter);
-		this.date = formatedNow;
+		setDate(date);
 	}
 	
 	public void setNum(int num) {
 		this.num = num;
 	}
-	public void settitle(String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
-	public void setcontent(String content) {
+	public void setContent(String content) {
 		this.content = content;
 	}
-	public void setdate(LocalDate date) {
+	public void setDate(LocalDate date) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
 		String formatedNow = date.format(formatter);
 		this.date = formatedNow;
@@ -38,13 +35,13 @@ public class Board {
 	public int getNum() {
 		return num;
 	}
-	public String gettitle() {
+	public String getTitle() {
 		return title;
 	}
-	public String getcontent() {
+	public String getContent() {
 		return content;
 	}
-	public String getdate() {
+	public String getDate() {
 		return date;
 	}
 }
