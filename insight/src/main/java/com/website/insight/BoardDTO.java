@@ -3,14 +3,14 @@ package com.website.insight;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Board {
+public class BoardDTO {
 	private Integer num;
 	private String title;
 	private String content;
 	private String date;
 	
-	public Board() {}
-	public Board(int num, String title, String content, LocalDate date) {
+	public BoardDTO() {}
+	public BoardDTO(int num, String title, String content, LocalDate date) {
 		this.num = num;
 		this.title = title;
 		this.content = content;
