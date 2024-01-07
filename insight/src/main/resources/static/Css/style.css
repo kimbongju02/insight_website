@@ -1,0 +1,11 @@
+body {
+	position: relative;
+}
+
+.nav-link {
+	position: fixed;
+}
+
+.nav-link:active {
+	color: red;
+}
