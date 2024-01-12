@@ -1,11 +1,152 @@
-body {
-	position: relative;
+nav{
+  position: fixed;
 }
 
-.nav-link {
-	position: fixed;
+.navbar {
+  background: #000000;
+  display: flex;
+  position: fixed;
 }
 
-.nav-link:active {
-	color: red;
+.navbar a{
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.navbar a img{
+  widith: 40.95px;
+  height: 30.2px;
+  margin: 10px
+}
+
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus {
+  color: #FFFFFF;
+}
+
+.nav-item a {
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 18px;
+  height: 60px;
+  margin-right:50px;
+  padding-top: 15px;
+}
+.nav{
+  margin-right: 50px;
+}
+
+.nav .nav-link:hover,
+.nav .nav-link:active,
+.nav .nav-link:focus {
+  color: #A147C7;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card img {
+  height: 500px;
+  width: 360px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.3s ease-in-out;
+}
+
+.card:hover .card-body {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card-body h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  z-index: 1;
+  color: #fff;
+  transition: transform 0.3s;
+  font-weight: 800;
+  font-size: 56px;
+  display: flex;
+}
+
+.card:hover .card-body h2 {
+  transform: translate(-50%, calc(-100% - 80px)); /* 이미지 호버 시 위로 이동 */
+}
+
+.card-body .info {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: calc(100% - 30px);
+}
+
+.card-body .info p,
+.card-body .info button {
+  display: none;
+  color: #fff;
+  transition: display 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card-body .info p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  height: 107px;
+}
+
+.card-body .info button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover .card-body .info p,
+.card:hover .card-body .info button {
+  display: block;
+}
+
+.card-body .info button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 auto;
+  color: black;
+  width: 180px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+}
+
+.card-body .info button:hover {
+  background-color: #fff;
 }
